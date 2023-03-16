@@ -13,5 +13,6 @@ import javax.sql.DataSource;
 //@ComponentScan(basePackages = {"com.yanxia.study","config"})//大括号可以拿走
 @ComponentScan(basePackages = {"com.yanxia.study"})//使用import注解时，可以不扫描config包
 @Import(JdbcConfig.class)
+@PropertySource("classpath:jdbcConfig.properties")
 public class SpringConfiguration {
 }
